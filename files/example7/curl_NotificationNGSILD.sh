@@ -1,9 +1,9 @@
 while true
 do
-    temp=$(shuf -i 18-53 -n 1)
-    number=$(shuf -i 1-3113 -n 1)
+    temp=20
+    number=10
 
-    curl -v -s -S -X POST http://localhost:9002 \
+    curl -v -s -S -X POST http://localhost:9001 \
     --header 'Content-Type: application/json; charset=utf-8' \
     --header 'Accept: application/json' \
     -d  '{
@@ -17,8 +17,8 @@ do
                  "co": {"type": "Property","value": 0},
                  "co2": {"type": "Property","value": 0},
                  "humidity": {"type": "Property","value": 40},
-                 "pressure": {"type": "Property","value": '$number'},
-                 "temperature": {"type": "Property","value": '$temp'},
+                 "pressure": {"type": "Property","value": 30},
+                 "temperature": {"type": "Property","value": 40},
                  "wind_speed": {"type": "Property","value": 1.06}
              }
          ]

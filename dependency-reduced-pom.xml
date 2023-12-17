@@ -4,7 +4,7 @@
   <groupId>org.fiware.cosmos</groupId>
   <artifactId>orion.spark.connector.examples</artifactId>
   <name>Fiware Orion Spark Connector Examples</name>
-  <version>1.1.0</version>
+  <version>1.2.2</version>
   <url>https://www.fiware.org/</url>
   <build>
     <plugins>
@@ -134,20 +134,20 @@
       <dependencies>
         <dependency>
           <groupId>org.apache.spark</groupId>
-          <artifactId>spark-core_2.11</artifactId>
-          <version>2.4.3</version>
+          <artifactId>spark-core_2.12</artifactId>
+          <version>3.5.0</version>
           <scope>compile</scope>
         </dependency>
         <dependency>
           <groupId>org.apache.spark</groupId>
-          <artifactId>spark-streaming_2.11</artifactId>
-          <version>2.4.3</version>
+          <artifactId>spark-streaming_2.12</artifactId>
+          <version>3.5.0</version>
           <scope>compile</scope>
         </dependency>
         <dependency>
           <groupId>org.scala-lang</groupId>
           <artifactId>scala-library</artifactId>
-          <version>2.11.12</version>
+          <version>2.12.14</version>
           <scope>compile</scope>
         </dependency>
       </dependencies>
@@ -168,7 +168,7 @@
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
-      <version>2.11.12</version>
+      <version>2.12.14</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -185,11 +185,11 @@
     </dependency>
   </dependencies>
   <properties>
-    <scala.version>2.11.12</scala.version>
-    <scala.binary.version>2.11</scala.binary.version>
+    <scala.binary.version>2.12</scala.binary.version>
+    <spark.version>3.5.0</spark.version>
     <play2.version>2.4.6</play2.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spark.version>2.4.3</spark.version>
+    <scala.version>2.12.14</scala.version>
   </properties>
 </project>
 
